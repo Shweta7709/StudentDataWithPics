@@ -7,7 +7,6 @@ public class StudentData {
         String username = "root";
         String password = "12345678";
 
-        // Paths to image files
         String imagePath1 = "D:\\\\DELL\\\\College_Training\\\\JDBC\\\\wallpaper.png";
         String imagePath2 = "D:\\\\DELL\\\\College_Training\\\\JDBC\\\\wallpaper.png";
         String imagePath3 = "D:\\\\DELL\\\\College_Training\\\\JDBC\\\\wallpaper.png";
@@ -32,7 +31,7 @@ public class StudentData {
                 pstmt.setBinaryStream(6, fis1, (int) file1.length()); // profile_pic
                 pstmt.addBatch();  // Add to batch
 
-//                //  Second Student
+               //  Second Student
                 File file2 = new File(imagePath2); //  Declare file2
                 FileInputStream fis2 = new FileInputStream(file2); //  Declare fis2
                 pstmt.setInt(1, 2); // RNo
