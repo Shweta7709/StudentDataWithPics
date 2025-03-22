@@ -72,11 +72,11 @@ public class StudentData {
                  pstmt.setBinaryStream(6, fis5, (int) file5.length());
                  pstmt.addBatch();  // Add to batch
 
-                //  Execute Batch
+                
                 int[] results = pstmt.executeBatch();
                 System.out.println("Inserted " + results.length + " records successfully.");
 
-                // Close file streams
+            
                 fis1.close();
                 fis2.close();
             }
